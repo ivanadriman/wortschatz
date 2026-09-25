@@ -33,36 +33,42 @@ if %errorlevel% neq 0 (
     git remote add origin https://github.com/ivanadriman/wortschatz.git
 )
 
-REM 4. Show current status
-echo [Current Git Status]
-git status --short
-echo.
-
-REM 5. Stage all changes
+REM 4. Stage all changes
 git add .
 
 REM Check if there are changes to commit
 git diff --cached --quiet
 if %errorlevel% equ 0 (
-    echo [*] No new changes to commit.
-    echo.
-    set /p force_push="Do you want to force push current state to GitHub anyway? (y/n): "
-    if /i "%force_push%"=="y" (
-        git push -u origin main
-    )
-    goto finish
+    echo [*] Working tree clean. Preparing to push...
+) else (
+    set /p commit_msg="Enter commit message (or press Enter for 'Update Wortschatz web app'): "
+    if "%commit_msg%"=="" set commit_msg=Update Wortschatz web app
+    git commit -m "%commit_msg%"
 )
 
-REM 6. Get commit message
-set /p commit_msg="Enter commit message (or press Enter for 'Update Wortschatz web app'): "
-if "%commit_msg%"=="" set commit_msg=Update Wortschatz web app
+echo.
+echo [*] Syncing with remote repository...
+REM Pull remote changes with allow-unrelated-histories to reconcile initial commits
+git pull origin main --rebase --allow-unrelated-histories 2>nul
+if %errorlevel% neq 0 (
+    echo [*] Reconciling branch heads...
+    git pull origin main --no-rebase --allow-unrelated-histories -X ours --no-edit 2>nul
+)
 
-git commit -m "%commit_msg%"
 echo.
 echo [*] Pushing to GitHub (main branch)...
 git push -u origin main
 
-:finish
+if %errorlevel% neq 0 (
+    echo.
+    echo [!] Standard push rejected. Remote has different commit history.
+    set /p do_force="Overwrite GitHub with these local files? (Recommended for first deploy) (y/n): "
+    if /i "%do_force%"=="y" (
+        echo [*] Force pushing to main branch...
+        git push -u origin main --force
+    )
+)
+
 echo.
 echo ==============================================
 echo   Done! Your updates are on GitHub.
