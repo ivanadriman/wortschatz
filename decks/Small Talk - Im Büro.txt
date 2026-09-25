@@ -1,0 +1,21 @@
+German;English
+Guten Morgen! Hast du gut geschlafen?;Good morning! Did you sleep well?
+Wie war dein Wochenende?;How was your weekend?
+Mein Wochenende war sehr erholsam, danke!;My weekend was very relaxing, thank you!
+Holst du dir auch einen Kaffee?;Are you grabbing a coffee too?
+Wie läuft das neue Projekt?;How is the new project going?
+Bei mir ist heute ziemlich viel los.;I have quite a lot going on today.
+Machst du heute auch eine kurze Mittagspause?;Are you taking a short lunch break today too?
+Gehen wir zusammen zum Mittagessen?;Shall we go to lunch together?
+Hast du heute viele Termine?;Do you have many meetings today?
+Bist du morgen im Büro oder im Homeoffice?;Are you in the office or working from home tomorrow?
+Schönen Feierabend!;Have a nice evening after work!
+Danke, dir auch einen schönen Feierabend!;Thanks, have a good evening too!
+Schönes Wochenende und erhol dich gut!;Have a great weekend and get some rest!
+Bis morgen früh!;See you tomorrow morning!
+Viel Erfolg bei der Präsentation!;Good luck with the presentation!
+Danke für deine schnelle Unterstützung!;Thank you for your quick support!
+Das besprechen wir am besten gleich.;We'd best discuss that right away.
+Kommst du mit zum Firmen-Event am Freitag?;Are you coming to the company event on Friday?
+Ich muss jetzt leider in die nächste Besprechung.;Unfortunately, I have to go to my next meeting now.
+Man sieht sich später!;See you later!

@@ -1,0 +1,19 @@
+German;English
+Hallo, wie geht es Ihnen heute?;Hello, how are you doing today?
+Danke, gut! Und Ihnen?;Fine, thank you! And you?
+Schön, Sie wiederzusehen!;Nice to see you again!
+Das Wetter ist heute wirklich herrlich!;The weather today is truly wonderful!
+Es ist ganz schön frisch geworden, oder?;It has gotten quite chilly, hasn't it?
+Es regnet schon den ganzen Tag.;It has been raining all day.
+Was für ein süßer Hund! Wie heißt er denn?;What a cute dog! What's his name?
+Sind Sie vor kurzem hier eingezogen?;Did you move in here recently?
+Ich wohne direkt im zweiten Stock.;I live right on the second floor.
+Haben Sie heute einen schönen Spaziergang gemacht?;Did you have a nice walk today?
+Ihr Balkon sieht wirklich wunderschön bepflanzt aus.;Your balcony looks really beautifully planted.
+Brauchen Sie vielleicht Hilfe beim Reintragen der Einkäufe?;Do you need some help carrying in the groceries?
+Vielen Dank für Ihre nette Nachbarschaftshilfe!;Thank you very much for your kind neighborly help!
+Ich wünsche Ihnen noch einen schönen Nachmittag!;I wish you a pleasant afternoon!
+Schönes Wochenende für Sie und Ihre Familie!;Have a great weekend for you and your family!
+Man sieht sich im Haus, bis bald!;See you around the building, until soon!
+Einen schönen Abend noch!;Have a nice evening!
+Passen Sie gut auf sich auf!;Take good care of yourself!

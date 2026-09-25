@@ -1,0 +1,20 @@
+German;English
+Guten Tag! Ich habe akute Beschwerden und brauche einen Termin.;Good day! I have acute complaints and need an appointment.
+Seit drei Tagen habe ich starke, stechende Kopfschmerzen.;For three days I have had severe, stabbing headaches.
+Mir ist seit heute Morgen schwindelig und übel.;I have been feeling dizzy and nauseous since this morning.
+Tut es weh, wenn ich hier auf den Bauch drücke?;Does it hurt when I press here on your abdomen?
+Der Schmerz zieht bis in den unteren Rücken.;The pain radiates down into my lower back.
+Ich brauche eine Arbeitsunfähigkeitsbescheinigung für den Arbeitgeber.;I need a sick leave certificate (AU) for my employer.
+Ich schreibe Sie für den Rest der Woche krank.;I will sign you off sick for the rest of the week.
+Schonen Sie sich bitte und trinken Sie viel Tee.;Please take it easy and drink plenty of herbal tea.
+Muss ich für die Blutabnahme morgen früh nüchtern sein?;Do I have to fast for the blood draw tomorrow morning?
+Haben Sie bekannte Allergien gegen bestimmte Medikamente?;Do you have any known allergies to certain medications?
+Gibt es bei diesen Tabletten irgendwelche Nebenwirkungen?;Are there any side effects with these pills?
+Nehmen Sie das Medikament bitte dreimal täglich nach dem Essen.;Please take the medication three times daily after meals.
+Ist dieses Medikament rezeptpflichtig oder frei verkäuflich?;Is this medication prescription-only or over-the-counter?
+Ich stelle Ihnen eine Überweisung zum Facharzt aus.;I am issuing a referral to a specialist for you.
+Wann soll ich zur Kontrolluntersuchung wiederkommen?;When should I come back for a follow-up check-up?
+Die Praxis hat am Mittwochnachmittag leider geschlossen.;Unfortunately, the clinic is closed on Wednesday afternoons.
+Welche Notfallpraxis hat am Wochenende Notdienst?;Which emergency clinic is on duty over the weekend?
+Gute Besserung und erholen Sie sich gründlich!;Get well soon and recover thoroughly!
+Vielen Dank für die gründliche Behandlung, Herr Doktor!;Thank you very much for the thorough treatment, Doctor!

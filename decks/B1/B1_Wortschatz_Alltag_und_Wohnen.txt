@@ -1,0 +1,28 @@
+# B1 Wortschatz - Alltag & Wohnen (Daily Life & Housing)
+# Format: German (with article / plural); English
+
+die Wohnung, -en; the apartment / flat
+das Mehrfamilienhaus, die Mehrfamilienhäuser; the apartment building
+der Mietvertrag, die Mietverträge; the rental contract / lease
+die Kaution, -en; the security deposit
+die Nebenkosten (Plural); the utility costs / additional expenses
+die Warmmiete, -n; the warm rent (rent including heating and utilities)
+die Kaltmiete, -n; the basic rent (excluding heating and utilities)
+der Vermieter, -; the landlord
+die Vermieterin, -nen; the landlady
+der Mieter, -; the tenant
+die Hausordnung, -en; the house rules
+der Umzug, die Umzüge; the relocation / moving house
+einrichten (richtet ein, richtete ein, hat eingerichtet); to furnish / decorate
+die Möbel (Plural); the furniture
+das Haushaltsgerät, -e; the household appliance
+die Waschmaschine, -n; the washing machine
+der Geschirrspüler, -; the dishwasher
+die Nachbarschaft, -en; the neighbourhood
+der Hausmeister, -; the caretaker / janitor
+der Müll, (nur Sg.); the rubbish / waste
+die Mülltrennung, (nur Sg.); the waste separation / recycling
+der Stromausfall, die Stromausfälle; the power outage / blackout
+renovieren (renoviert, renovierte, hat renoviert); to renovate / redecorate
+streichen (streicht, strich, hat gestrichen); to paint (walls)
+kündigen (kündigt, kündigte, hat gekündigt); to terminate / cancel (lease or job)

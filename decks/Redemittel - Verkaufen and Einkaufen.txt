@@ -1,0 +1,24 @@
+German;English
+Guten Tag! Kann ich Ihnen behilflich sein?;Good day! May I be of assistance?
+Ich schaue mich nur kurz um, vielen Dank!;I'm just browsing, thank you very much!
+Ich suche eine schwarze Winterjacke.;I am looking for a black winter jacket.
+Haben Sie diesen Pullover auch in Größe M?;Do you also have this sweater in size M?
+Gibt es diese Schuhe auch in einer anderen Farbe?;Are these shoes also available in another color?
+Wo befinden sich die Umkleidekabinen?;Where are the fitting rooms located?
+Darf ich diese Hose kurz anprobieren?;May I try on these pants?
+Das Kleid steht Ihnen wirklich ausgezeichnet!;That dress really suits you excellently!
+Die Jacke ist mir leider etwas zu eng an den Schultern.;Unfortunately, the jacket is a bit too tight on my shoulders.
+Wie viel kostet dieses Modell?;How much does this model cost?
+Ist dieser Artikel derzeit im Angebot?;Is this item currently on sale?
+Gibt es für Studenten einen zusätzlichen Rabatt?;Is there an additional discount for students?
+Leider ist dieser Artikel momentan ausverkauft.;Unfortunately, this item is currently sold out.
+Wir können das Produkt gerne für Sie in die Filiale bestellen.;We can gladly order the product to this branch for you.
+War das alles, oder darf es noch etwas sein?;Was that all, or can I get you anything else?
+Das macht dann zusammen 38,50 Euro, bitte.;That comes to 38.50 euros altogether, please.
+Kann ich mit Karte oder kontaktlos mit dem Handy bezahlen?;Can I pay with card or contactless with my phone?
+Zahlen Sie bar oder mit Karte?;Are you paying cash or by card?
+Brauchen Sie eine Tragetasche dafür?;Do you need a shopping bag for that?
+Möchten Sie den Kassenbon mitnehmen?;Would you like to take the receipt?
+Kann ich diesen Artikel innerhalb von 14 Tagen umtauschen?;Can I exchange this item within 14 days?
+Ich möchte das Gerät gerne reklamieren, weil es defekt ist.;I would like to return the device because it is defective.
+Vielen Dank für Ihren Einkauf und auf Wiedersehen!;Thank you very much for your purchase and goodbye!

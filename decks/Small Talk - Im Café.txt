@@ -1,0 +1,21 @@
+German;English
+Ist hier noch frei?;Is this seat free? / Is anyone sitting here?
+Darf ich mich zu Ihnen setzen?;May I sit with you? (formal)
+Kannst du einen guten Kaffee empfehlen?;Can you recommend a good coffee? (informal)
+Können Sie mir einen Tee empfehlen?;Can you recommend a tea? (formal)
+Der Kuchen sieht wirklich lecker aus.;The cake looks really delicious.
+Ich komme oft hierher, die Atmosphäre ist toll.;I come here often, the atmosphere is great.
+Trinken Sie lieber Kaffee oder Tee?;Do you prefer to drink coffee or tea?
+Entschuldigung, haben Sie vielleicht die Speisekarte?;Excuse me, do you happen to have the menu?
+Das Wetter ist heute perfekt für ein Heißgetränk.;The weather today is perfect for a hot drink.
+Was hast du bestellt? Das riecht fantastisch!;What did you order? That smells fantastic!
+Ein wirklich schöner Ort zum Entspannen.;A really nice place to relax.
+Arbeiten Sie auch oft im Café?;Do you also often work in a café?
+Ich genieße einfach eine kurze Pause.;I am just enjoying a short break.
+Haben Sie heute noch viel vor?;Do you have a lot planned for the rest of today?
+Guten Appetit und lassen Sie es sich schmecken!;Enjoy your meal and enjoy your food!
+Vielen Dank, gleichfalls!;Thank you very much, same to you!
+Schön, Sie kennengelernt zu haben!;Nice to have met you!
+Ich wünsche Ihnen noch einen schönen Tag!;I wish you a nice day!
+Bis zum nächsten Mal!;Until next time!
+Tschüss, machen Sie es gut!;Bye, take care!

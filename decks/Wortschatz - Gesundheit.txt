@@ -1,0 +1,35 @@
+German;English
+das Krankenhaus;the hospital
+der Arzt;the doctor (male)
+die Ärztin;the doctor (female)
+die Apotheke;the pharmacy
+das Medikament;the medication / medicine
+die Tablette;the pill / tablet
+das Rezept;the medical prescription
+die Schmerzen;the pain / aches
+die Kopfschmerzen;the headache
+die Halsschmerzen;the sore throat
+die Magenschmerzen;the stomach ache
+die Bauchschmerzen;the abdominal pain
+die Rückenschmerzen;the back pain
+das Fieber;the fever
+das Thermometer;the clinical thermometer
+der Husten;the cough
+der Schnupfen;the runny nose / cold
+die Erkältung;the common cold
+die Grippe;the flu / influenza
+die Gesundheit;the health
+die Krankheit;the illness / disease
+die Untersuchung;the medical examination
+die Behandlung;the medical treatment
+die Praxis;the doctor's office / clinic
+das Wartezimmer;the waiting room
+der Notarzt;the emergency doctor
+die Notaufnahme;the emergency room
+der Krankenwagen;the ambulance
+der Blutdruck;the blood pressure
+die Versicherungskarte;the health insurance card
+das Pflaster;the band-aid / adhesive plaster
+der Verband;the bandage / dressing
+die Spritze;the injection / syringe
+die Salbe;the ointment / healing cream

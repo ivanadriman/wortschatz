@@ -1,0 +1,21 @@
+German;English
+Entschuldigung, ist dieser Platz noch frei?;Excuse me, is this seat still free?
+Fährt dieser Zug direkt nach Berlin?;Does this train go directly to Berlin?
+Wissen Sie, ob der Zug Verspätung hat?;Do you know if the train is delayed?
+Reisen Sie geschäftlich oder privat?;Are you traveling for business or for pleasure?
+Wie lange dauert die Fahrt noch?;How long does the journey take from here?
+Das Wetter ist heute unterwegs leider ziemlich regnerisch.;The weather is unfortunately quite rainy for traveling today.
+Fahren Sie diese Strecke regelmäßig?;Do you travel this route regularly?
+Ich fahre fast jeden Tag mit der Bahn zur Arbeit.;I take the train to work almost every day.
+Endlich Wochenende, ich fahre zu meiner Familie!;Finally weekend, I'm heading to visit my family!
+Wohin geht Ihre Reise?;Where are you traveling to?
+Kann ich Ihnen vielleicht mit dem Koffer helfen?;Could I perhaps help you with your suitcase?
+Vielen Dank für Ihre freundliche Hilfe!;Thank you so much for your kind help!
+Gute Reise und eine sichere Fahrt!;Have a good trip and a safe journey!
+Danke, Ihnen auch eine angenehme Fahrt!;Thank you, have a pleasant trip too!
+Wir erreichen gleich den Hauptbahnhof.;We will be arriving at the main station shortly.
+Kommen Sie gut an!;Get there safely!
+Bis bald und eine gute Heimreise!;See you soon and have a safe journey home!
+Haben Sie eine gute Verbindung zum Anschlusszug?;Do you have a good connection for your next train?
+Das war eine sehr angenehme Unterhaltung.;That was a very pleasant conversation.
+Auf Wiedersehen und alles Gute!;Goodbye and all the best!

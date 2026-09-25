@@ -1,0 +1,23 @@
+German;English
+Gute Besserung!;Get well soon!
+Wie fühlen Sie sich heute?;How are you feeling today? (formal)
+Wie geht es dir heute?;How are you feeling today? (informal)
+Ich fühle mich heute leider überhaupt nicht wohl.;Unfortunately, I don't feel well at all today.
+Mir geht es schon viel besser, danke!;I am already feeling much better, thank you!
+Mir ist schwindelig und übel.;I feel dizzy and nauseous.
+Ich habe seit heute Morgen starke Kopfschmerzen.;I have had a severe headache since this morning.
+Wo tut es Ihnen denn genau weh?;Where exactly does it hurt? (formal)
+Mein Hals tut beim Schlucken sehr weh.;My throat hurts a lot when swallowing.
+Ich habe mir anscheinend eine Erkältung geholt.;I seem to have caught a cold.
+Haben Sie schon Fieber gemessen?;Have you already taken your temperature? (formal)
+Ich muss dringend einen Termin beim Arzt vereinbaren.;I urgently need to make an appointment with the doctor.
+Wann haben Sie den nächsten freien Termin?;When do you have the next available appointment?
+Nehmen Sie bitte kurz im Wartezimmer Platz.;Please take a seat in the waiting room for a moment.
+Wie oft soll ich diese Tabletten einnehmen?;How often should I take these pills?
+Nehmen Sie eine Tablette morgens und abends nach dem Essen.;Take one tablet in the morning and evening after meals.
+Brauche ich für dieses Medikament ein ärztliches Rezept?;Do I need a doctor's prescription for this medication?
+Bleiben Sie ein paar Tage im Bett und ruhen Sie sich aus.;Stay in bed for a few days and get some rest.
+Trinken Sie viel warmen Tee und schlafen Sie viel.;Drink plenty of warm tea and get lots of sleep.
+Passen Sie gut auf Ihre Gesundheit auf!;Take good care of your health!
+Vielen Dank für Ihre Hilfe und den guten Rat!;Thank you very much for your help and the good advice!
+Hoffentlich geht es Ihnen bald wieder richtig gut!;Hopefully you'll be feeling completely well again soon!

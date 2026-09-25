@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="de" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🇩🇪 Wortschatz — German Flashcards (B1, B2, C1)</title>
+  <!-- Tailwind CSS via CDN for modern Windows 11 / iOS styling -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#eff6ff',
+              500: '#3b82f6',
+              600: '#2563eb',
+              700: '#1d4ed8'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <!-- Load Deck Data -->
+  <script src="decks_data.js"></script>
+  <style>
+    /* Card Flip 3D Perspective */
+    .perspective-1000 { perspective: 1000px; }
+    .transform-style-3d { transform-style: preserve-3d; }
+    .backface-hidden { backface-visibility: hidden; }
+    .rotate-y-180 { transform: rotateY(180deg); }
+    .card-transition { transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+  </style>
+</head>
+<body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col font-sans antialiased select-none">
+
+  <!-- TOP HEADER -->
+  <header class="border-b border-slate-800 bg-slate-950/80 backdrop-blur sticky top-0 z-20 px-4 py-3">
+    <div class="max-w-4xl mx-auto flex flex-wrap items-center justify-between gap-3">
+      <div class="flex items-center space-x-3">
+        <span class="text-2xl">🇩🇪</span>
+        <h1 class="text-lg font-bold tracking-tight text-white flex items-center gap-2">
+          Wortschatz <span class="text-xs px-2 py-0.5 rounded-full bg-blue-500/20 text-blue-400 font-semibold border border-blue-500/30">Web</span>
+        </h1>
+      </div>
+
+      <!-- CEFR Level Filter: [ All | B1 | B2 | C1 ] -->
+      <div class="inline-flex rounded-lg bg-slate-800 p-0.5 border border-slate-700 text-xs font-semibold">
+        <button id="lvl-all" onclick="setLevelFilter('ALL')" class="px-3 py-1 rounded-md bg-blue-600 text-white transition">All</button>
+        <button id="lvl-b1" onclick="setLevelFilter('B1')" class="px-3 py-1 rounded-md text-slate-400 hover:text-white transition">B1</button>
+        <button id="lvl-b2" onclick="setLevelFilter('B2')" class="px-3 py-1 rounded-md text-slate-400 hover:text-white transition">B2</button>
+        <button id="lvl-c1" onclick="setLevelFilter('C1')" class="px-3 py-1 rounded-md text-slate-400 hover:text-white transition">C1</button>
+      </div>
+
+      <!-- Category Select Menu -->
+      <div class="flex items-center gap-2">
+        <select id="categorySelect" onchange="onCategoryChange(this.value)" class="bg-slate-800 text-slate-200 text-xs font-medium rounded-lg px-3 py-2 border border-slate-700 outline-none focus:border-blue-500 max-w-[220px] truncate">
+          <!-- Populated by JS -->
+        </select>
+        <button onclick="toggleTheme()" class="p-2 rounded-lg bg-slate-800 text-slate-300 hover:bg-slate-700 text-xs">
+          🌓
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- CONTROLS & STATS BAR -->
+  <main class="flex-1 max-w-4xl w-full mx-auto px-4 py-6 flex flex-col justify-between">
+    
+    <!-- Mode & Settings Toolbar -->
+    <div class="flex flex-wrap items-center justify-between gap-3 mb-4 text-xs">
+      <!-- Mode Toggle -->
+      <div class="inline-flex rounded-lg bg-slate-800 p-0.5 border border-slate-700 font-semibold">
+        <button id="mode-explore" onclick="setStudyMode('explore')" class="px-3 py-1.5 rounded-md bg-blue-600 text-white transition">📖 Explore</button>
+        <button id="mode-quiz" onclick="setStudyMode('quiz')" class="px-3 py-1.5 rounded-md text-slate-400 hover:text-white transition">🎯 Quiz</button>
+      </div>
+
+      <!-- Quick Toggles -->
+      <div class="flex items-center gap-2">
+        <button id="shuffleBtn" onclick="toggleShuffle()" class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 border border-slate-700 hover:bg-slate-700 transition flex items-center gap-1">
+          🔀 <span>Shuffle: Off</span>
+        </button>
+        <button id="reverseBtn" onclick="toggleReverse()" class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 border border-slate-700 hover:bg-slate-700 transition flex items-center gap-1">
+          ⇄ <span>DE ➔ EN</span>
+        </button>
+        <button id="autoAudioBtn" onclick="toggleAutoAudio()" class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-300 border border-slate-700 hover:bg-slate-700 transition flex items-center gap-1">
+          🔊 <span>Auto: Off</span>
+        </button>
+      </div>
+
+      <!-- Card Counter -->
+      <div id="counterLabel" class="text-slate-400 font-medium">
+        Card 1 / 25
+      </div>
+    </div>
+
+    <!-- FLASHCARD CONTAINER -->
+    <div class="flex-1 flex items-center justify-center py-4">
+      <div id="cardBox" onclick="flipCard()" class="w-full max-w-2xl min-h-[340px] bg-slate-800/90 hover:bg-slate-800 border border-slate-700/80 rounded-2xl p-6 sm:p-8 cursor-pointer shadow-xl hover:shadow-2xl transition flex flex-col justify-between relative group">
+        
+        <!-- Top Meta Tags -->
+        <div class="flex items-center justify-between gap-2">
+          <div class="flex items-center gap-2">
+            <span id="levelBadge" class="text-xs font-bold px-2.5 py-1 rounded-md bg-sky-500/20 text-sky-400 border border-sky-500/30">B1</span>
+            <span id="categoryBadge" class="text-xs font-semibold px-2.5 py-1 rounded-md bg-slate-700 text-slate-300 max-w-[200px] truncate">CATEGORY</span>
+            <span id="articleBadge" class="hidden text-xs font-bold px-2 py-0.5 rounded-md bg-blue-500/20 text-blue-400 border border-blue-500/30">der</span>
+          </div>
+
+          <div class="flex items-center gap-2">
+            <!-- Audio Speaker Button -->
+            <button onclick="event.stopPropagation(); playSpeech();" class="p-2 rounded-lg bg-slate-700 hover:bg-slate-600 text-slate-200 transition" title="Listen (V / A)">
+              🔊
+            </button>
+            <span id="sideBadge" class="text-xs font-bold px-2.5 py-1 rounded-md bg-slate-700 text-slate-400">🇩🇪 GERMAN</span>
+          </div>
+        </div>
+
+        <!-- Center Content -->
+        <div class="text-center my-auto py-8">
+          <h2 id="mainCardText" class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight leading-snug">
+            das Krankenhaus
+          </h2>
+          <div id="pluralBadge" class="hidden mt-3 inline-block text-xs font-medium px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+            📖 Plural: die Krankenhäuser
+          </div>
+          <p id="subCardText" class="hidden mt-4 text-base font-medium text-slate-400 italic">
+            the hospital
+          </p>
+          <div id="noteBadge" class="hidden mt-2 text-xs text-slate-400 italic">
+            (Geldinstitut)
+          </div>
+        </div>
+
+        <!-- Bottom Prompt Hint -->
+        <div class="flex items-center justify-between text-xs text-slate-500 border-t border-slate-700/60 pt-3">
+          <span>Click card or press <kbd class="px-1.5 py-0.5 bg-slate-700 rounded text-slate-300">Space</kbd> to flip</span>
+          <span id="quizStatusBadge" class="hidden font-semibold">⚪ Unseen</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOTTOM ACTION BUTTONS -->
+    <div id="actionArea" class="mt-4 flex items-center justify-center gap-4">
+      <!-- Explore Mode Buttons -->
+      <div id="exploreButtons" class="flex w-full max-w-lg gap-3">
+        <button onclick="prevCard()" class="flex-1 py-3 px-4 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 text-white font-semibold transition flex items-center justify-center gap-2">
+          ◀ Prev <span class="text-xs text-slate-400">(← / 1)</span>
+        </button>
+        <button onclick="flipCard()" class="flex-1 py-3 px-4 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold transition flex items-center justify-center gap-2 shadow-lg shadow-blue-500/20">
+          🔄 Flip <span class="text-xs text-blue-200">(Space)</span>
+        </button>
+        <button onclick="nextCard()" class="flex-1 py-3 px-4 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 text-white font-semibold transition flex items-center justify-center gap-2">
+          Next ▶ <span class="text-xs text-slate-400">(→ / 2)</span>
+        </button>
+      </div>
+
+      <!-- Quiz Mode Buttons -->
+      <div id="quizButtons" class="hidden flex w-full max-w-lg gap-3">
+        <button id="quizPracticeBtn" onclick="rateCard('needs_practice')" class="flex-1 py-3 px-4 rounded-xl bg-red-950/40 hover:bg-red-900/60 border border-red-500/40 text-red-200 font-bold transition flex items-center justify-center gap-2">
+          🔴 Practice <span class="text-xs text-red-400">(1)</span>
+        </button>
+        <button id="quizRevealBtn" onclick="flipCard()" class="flex-1 py-3 px-4 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold transition shadow-lg shadow-blue-500/20">
+          👁 Reveal <span class="text-xs text-blue-200">(Space)</span>
+        </button>
+        <button id="quizMasterBtn" onclick="rateCard('mastered')" class="flex-1 py-3 px-4 rounded-xl bg-emerald-950/40 hover:bg-emerald-900/60 border border-emerald-500/40 text-emerald-200 font-bold transition flex items-center justify-center gap-2">
+          🟢 Mastered <span class="text-xs text-emerald-400">(2)</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- FOOTER HINTS & STATS -->
+    <footer class="mt-6 text-center text-xs text-slate-500">
+      <div id="statsChip" class="mb-1 text-slate-400">
+        🔥 Streak: 0 days • 🔴 Practice: 0 • 🟢 Mastered: 0
+      </div>
+      <div>Keyboard Shortcuts: <kbd class="px-1 bg-slate-800 rounded">Space</kbd> Flip • <kbd class="px-1 bg-slate-800 rounded">1</kbd> Prev/Practice • <kbd class="px-1 bg-slate-800 rounded">2</kbd> Next/Mastered • <kbd class="px-1 bg-slate-800 rounded">V</kbd> Audio</div>
+    </footer>
+
+  </main>
+
+  <!-- JAVASCRIPT APPLICATION LOGIC -->
+  <script>
+    // State
+    let currentLevel = 'ALL';
+    let currentCategory = '';
+    let activeCards = [];
+    let currentIndex = 0;
+    let isFlipped = false;
+    let studyMode = 'explore'; // 'explore' or 'quiz'
+    let isShuffled = false;
+    let isReversed = false;
+    let autoAudio = false;
+
+    // LocalStorage Progress Tracker
+    let progressData = JSON.parse(localStorage.getItem('wortschatz_progress') || '{}');
+
+    function saveProgress() {
+      localStorage.setItem('wortschatz_progress', JSON.stringify(progressData));
+      updateStatsChip();
+    }
+
+    // Initialize App
+    function init() {
+      if (!window.WORTSCHATZ_DECKS) {
+        alert("Deck data not found. Please ensure decks_data.js is present.");
+        return;
+      }
+      populateCategories();
+      setupKeybindings();
+      updateStatsChip();
+    }
+
+    function populateCategories() {
+      const select = document.getElementById('categorySelect');
+      select.innerHTML = '';
+
+      const allDecks = window.WORTSCHATZ_DECKS;
+      const categories = Object.keys(allDecks).sort();
+
+      let visible = categories.filter(cat => {
+        if (currentLevel === 'ALL') return true;
+        const deck = allDecks[cat];
+        return deck.level === currentLevel || cat.includes(currentLevel);
+      });
+
+      if (visible.length === 0) {
+        select.innerHTML = '<option value="">No decks found</option>';
+        activeCards = [];
+        renderCard();
+        return;
+      }
+
+      // Add "All" aggregated option
+      let totalVisibleCards = 0;
+      visible.forEach(cat => totalVisibleCards += allDecks[cat].count);
+      
+      const optAll = document.createElement('option');
+      optAll.value = '__ALL__';
+      optAll.textContent = `★ All (${currentLevel}) (${totalVisibleCards})`;
+      select.appendChild(optAll);
+
+      visible.forEach(cat => {
+        const opt = document.createElement('option');
+        opt.value = cat;
+        opt.textContent = `${cat} (${allDecks[cat].count})`;
+        select.appendChild(opt);
+      });
+
+      currentCategory = '__ALL__';
+      select.value = '__ALL__';
+      loadCategoryCards();
+    }
+
+    function onCategoryChange(cat) {
+      currentCategory = cat;
+      loadCategoryCards();
+    }
+
+    function setLevelFilter(lvl) {
+      currentLevel = lvl;
+      ['all', 'b1', 'b2', 'c1'].forEach(l => {
+        const btn = document.getElementById(`lvl-${l}`);
+        if (l.toUpperCase() === lvl) {
+          btn.className = 'px-3 py-1 rounded-md bg-blue-600 text-white transition';
+        } else {
+          btn.className = 'px-3 py-1 rounded-md text-slate-400 hover:text-white transition';
+        }
+      });
+      populateCategories();
+    }
+
+    function loadCategoryCards() {
+      const allDecks = window.WORTSCHATZ_DECKS;
+      let cards = [];
+
+      if (currentCategory === '__ALL__') {
+        Object.keys(allDecks).forEach(cat => {
+          if (currentLevel === 'ALL' || allDecks[cat].level === currentLevel || cat.includes(currentLevel)) {
+            cards.push(...allDecks[cat].cards);
+          }
+        });
+      } else if (allDecks[currentCategory]) {
+        cards = [...allDecks[currentCategory].cards];
+      }
+
+      if (isShuffled) {
+        cards.sort(() => Math.random() - 0.5);
+      }
+
+      activeCards = cards;
+      currentIndex = 0;
+      isFlipped = false;
+      renderCard();
+    }
+
+    function renderCard() {
+      if (!activeCards || activeCards.length === 0) {
+        document.getElementById('mainCardText').textContent = "No cards available";
+        document.getElementById('subCardText').className = "hidden";
+        document.getElementById('counterLabel').textContent = "Card 0 / 0";
+        return;
+      }
+
+      const card = activeCards[currentIndex];
+      document.getElementById('counterLabel').textContent = `Card ${currentIndex + 1} / ${activeCards.length}`;
+
+      // Level badge
+      const lvl = card.level || 'ALL';
+      const lvlEl = document.getElementById('levelBadge');
+      if (['B1', 'B2', 'C1'].includes(lvl)) {
+        lvlEl.classList.remove('hidden');
+        lvlEl.textContent = lvl;
+        if (lvl === 'B1') lvlEl.className = 'text-xs font-bold px-2.5 py-1 rounded-md bg-sky-500/20 text-sky-400 border border-sky-500/30';
+        if (lvl === 'B2') lvlEl.className = 'text-xs font-bold px-2.5 py-1 rounded-md bg-blue-500/20 text-blue-400 border border-blue-500/30';
+        if (lvl === 'C1') lvlEl.className = 'text-xs font-bold px-2.5 py-1 rounded-md bg-purple-500/20 text-purple-400 border border-purple-500/30';
+      } else {
+        lvlEl.classList.add('hidden');
+      }
+
+      // Category badge
+      document.getElementById('categoryBadge').textContent = (currentCategory === '__ALL__' ? 'ALL DECKS' : currentCategory).toUpperCase();
+
+      // Article badge
+      const artEl = document.getElementById('articleBadge');
+      if (card.article && !isReversed) {
+        artEl.classList.remove('hidden');
+        artEl.textContent = card.article;
+        if (card.article === 'der') artEl.className = 'text-xs font-bold px-2 py-0.5 rounded-md bg-blue-500/20 text-blue-400 border border-blue-500/30';
+        if (card.article === 'die') artEl.className = 'text-xs font-bold px-2 py-0.5 rounded-md bg-rose-500/20 text-rose-400 border border-rose-500/30';
+        if (card.article === 'das') artEl.className = 'text-xs font-bold px-2 py-0.5 rounded-md bg-emerald-500/20 text-emerald-400 border border-emerald-500/30';
+      } else {
+        artEl.classList.add('hidden');
+      }
+
+      // Texts
+      const frontText = isReversed ? card.english : (card.clean_prompt || card.german);
+      const backText = isReversed ? (card.clean_prompt || card.german) : card.english;
+
+      const mainEl = document.getElementById('mainCardText');
+      const subEl = document.getElementById('subCardText');
+      const pluralEl = document.getElementById('pluralBadge');
+      const noteEl = document.getElementById('noteBadge');
+      const sideEl = document.getElementById('sideBadge');
+
+      if (!isFlipped) {
+        mainEl.textContent = frontText;
+        subEl.classList.add('hidden');
+        pluralEl.classList.add('hidden');
+        noteEl.classList.add('hidden');
+        sideEl.textContent = isReversed ? "🇬🇧 ENGLISH" : "🇩🇪 GERMAN";
+      } else {
+        mainEl.textContent = backText;
+        subEl.classList.remove('hidden');
+        subEl.textContent = frontText;
+        sideEl.textContent = isReversed ? "🇩🇪 GERMAN" : "🇬🇧 ENGLISH";
+
+        // Show plural if German is revealed
+        if (!isReversed && card.plural) {
+          pluralEl.classList.remove('hidden');
+          pluralEl.textContent = `📖 Plural: ${card.plural}`;
+        } else {
+          pluralEl.classList.add('hidden');
+        }
+
+        // Show grammar note
+        if (card.grammar_note) {
+          noteEl.classList.remove('hidden');
+          noteEl.textContent = `(${card.grammar_note})`;
+        } else {
+          noteEl.classList.add('hidden');
+        }
+
+        if (autoAudio) {
+          playSpeech();
+        }
+      }
+
+      // Quiz mode status badge
+      const quizBadge = document.getElementById('quizStatusBadge');
+      if (studyMode === 'quiz') {
+        quizBadge.classList.remove('hidden');
+        const st = progressData[card.german] || 'unseen';
+        if (st === 'mastered') {
+          quizBadge.textContent = '🟢 Mastered';
+          quizBadge.className = 'text-emerald-400 font-semibold';
+        } else if (st === 'needs_practice') {
+          quizBadge.textContent = '🔴 Practice';
+          quizBadge.className = 'text-rose-400 font-semibold';
+        } else {
+          quizBadge.textContent = '⚪ Unseen';
+          quizBadge.className = 'text-slate-400 font-semibold';
+        }
+      } else {
+        quizBadge.classList.add('hidden');
+      }
+    }
+
+    function flipCard() {
+      if (!activeCards || activeCards.length === 0) return;
+      isFlipped = !isFlipped;
+      renderCard();
+    }
+
+    function prevCard() {
+      if (!activeCards || activeCards.length === 0) return;
+      currentIndex = (currentIndex - 1 + activeCards.length) % activeCards.length;
+      isFlipped = false;
+      renderCard();
+    }
+
+    function nextCard() {
+      if (!activeCards || activeCards.length === 0) return;
+      currentIndex = (currentIndex + 1) % activeCards.length;
+      isFlipped = false;
+      renderCard();
+    }
+
+    function setStudyMode(mode) {
+      studyMode = mode;
+      const exploreBtn = document.getElementById('mode-explore');
+      const quizBtn = document.getElementById('mode-quiz');
+      const exploreActions = document.getElementById('exploreButtons');
+      const quizActions = document.getElementById('quizButtons');
+
+      if (mode === 'explore') {
+        exploreBtn.className = 'px-3 py-1.5 rounded-md bg-blue-600 text-white transition';
+        quizBtn.className = 'px-3 py-1.5 rounded-md text-slate-400 hover:text-white transition';
+        exploreActions.classList.remove('hidden');
+        quizActions.classList.add('hidden');
+      } else {
+        quizBtn.className = 'px-3 py-1.5 rounded-md bg-blue-600 text-white transition';
+        exploreBtn.className = 'px-3 py-1.5 rounded-md text-slate-400 hover:text-white transition';
+        exploreActions.classList.add('hidden');
+        quizActions.classList.remove('hidden');
+      }
+      renderCard();
+    }
+
+    function rateCard(status) {
+      if (!activeCards || activeCards.length === 0) return;
+      const card = activeCards[currentIndex];
+      progressData[card.german] = status;
+      saveProgress();
+      nextCard();
+    }
+
+    function toggleShuffle() {
+      isShuffled = !isShuffled;
+      document.getElementById('shuffleBtn').querySelector('span').textContent = `Shuffle: ${isShuffled ? 'On' : 'Off'}`;
+      loadCategoryCards();
+    }
+
+    function toggleReverse() {
+      isReversed = !isReversed;
+      document.getElementById('reverseBtn').querySelector('span').textContent = isReversed ? 'EN ➔ DE' : 'DE ➔ EN';
+      renderCard();
+    }
+
+    function toggleAutoAudio() {
+      autoAudio = !autoAudio;
+      document.getElementById('autoAudioBtn').querySelector('span').textContent = `Auto: ${autoAudio ? 'On' : 'Off'}`;
+    }
+
+    let currentAudioObj = null;
+
+    function playSpeech() {
+      if (!activeCards || activeCards.length === 0) return;
+      const card = activeCards[currentIndex];
+      const text = card.clean_prompt || card.german;
+
+      // 1. Try playing pre-rendered Microsoft Neural MP3 from audio/ folder
+      if (card.audio_file) {
+        if (currentAudioObj) {
+          currentAudioObj.pause();
+          currentAudioObj.currentTime = 0;
+        }
+
+        const audioUrl = `audio/${encodeURIComponent(card.audio_file)}`;
+        const testAudio = new Audio(audioUrl);
+        currentAudioObj = testAudio;
+
+        testAudio.play().catch(() => {
+          // 2. Fallback to Web Speech Synthesis if MP3 is missing
+          playWebSpeechFallback(text);
+        });
+        return;
+      }
+
+      playWebSpeechFallback(text);
+    }
+
+    function playWebSpeechFallback(text) {
+      if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+        const utter = new SpeechSynthesisUtterance(text);
+        utter.lang = 'de-DE';
+        utter.rate = 0.92; // Slightly natural cadence for learners
+        const voices = window.speechSynthesis.getVoices();
+        const deVoice = voices.find(v => v.lang.startsWith('de') && (v.name.includes('Katja') || v.name.includes('Natural') || v.name.includes('Google') || v.name.includes('Anna')));
+        if (deVoice) utter.voice = deVoice;
+        window.speechSynthesis.speak(utter);
+      }
+    }
+
+    function updateStatsChip() {
+      let practice = 0;
+      let mastered = 0;
+      Object.values(progressData).forEach(st => {
+        if (st === 'needs_practice') practice++;
+        if (st === 'mastered') mastered++;
+      });
+      document.getElementById('statsChip').textContent = `🔥 Streak: Active • 🔴 Practice: ${practice} • 🟢 Mastered: ${mastered}`;
+    }
+
+    function toggleTheme() {
+      document.documentElement.classList.toggle('dark');
+    }
+
+    function setupKeybindings() {
+      window.addEventListener('keydown', (e) => {
+        if (e.target.tagName === 'INPUT' || e.target.tagName === 'SELECT') return;
+
+        if (e.code === 'Space' || e.code === 'Enter') {
+          e.preventDefault();
+          flipCard();
+        } else if (e.code === 'ArrowLeft' || e.key === '1') {
+          if (studyMode === 'explore') prevCard();
+          else if (isFlipped) rateCard('needs_practice');
+        } else if (e.code === 'ArrowRight' || e.key === '2') {
+          if (studyMode === 'explore') nextCard();
+          else if (isFlipped) rateCard('mastered');
+        } else if (e.key === 'v' || e.key === 'V' || e.key === 'a' || e.key === 'A') {
+          playSpeech();
+        }
+      });
+    }
+
+    window.onload = init;
+  </script>
+</body>
+</html>

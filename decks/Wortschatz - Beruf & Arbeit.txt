@@ -1,0 +1,36 @@
+German;English
+der Beruf;the profession / occupation
+die Arbeit;the work / job
+der Arbeitsplatz;the workplace
+die Arbeitszeit;the working hours
+der Arbeitgeber;the employer
+der Arbeitnehmer;the employee
+die Besprechung;the meeting / discussion
+die Konferenz;the conference
+das Projekt;the project
+der Kollege;the colleague (male)
+die Kollegin;the colleague (female)
+das Team;the team
+der Chef;the boss (male)
+die Chefin;the boss (female)
+der Vorgesetzte;the supervisor / manager
+das Gehalt;the salary
+der Lohn;the wage
+die Bewerbung;the job application
+der Lebenslauf;the curriculum vitae (CV) / resume
+das Vorstellungsgespräch;the job interview
+der Vertrag;the contract
+der Arbeitsvertrag;the employment contract
+die Kündigung;the termination of employment / notice of resignation
+der Feierabend;the end of the workday / quitting time
+der Urlaub;the vacation / annual leave
+die Überstunden;the overtime hours
+das Büro;the office
+die Abteilung;the department
+die Karriere;the career
+die Weiterbildung;the further training / professional development
+das Praktikum;the internship
+das Homeoffice;the home office / remote work
+die Frist;the deadline
+die Aufgabe;the task / assignment
+das Unternehmen;the company / enterprise

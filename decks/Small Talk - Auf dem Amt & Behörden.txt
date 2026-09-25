@@ -1,0 +1,22 @@
+German;English
+Guten Tag! Ich habe einen Termin um 10 Uhr bei Frau Müller.;Good day! I have an appointment at 10 a.m. with Ms. Müller.
+Ich möchte mich nach meinem Umzug hier polizeilich anmelden.;I would like to register my new address here following my move.
+Hier sind mein Personalausweis und die Wohnungsgeberbestätigung.;Here are my identity card and the landlord confirmation certificate.
+Können Sie mir bitte dieses Dokument amtlich beglaubigen?;Could you please officially certify this document for me?
+Welche Unterlagen muss ich für den Antrag noch nachreichen?;What documents do I still need to submit for the application?
+Ich möchte meinen Reisepass verlängern lassen.;I would like to have my passport renewed.
+Wie lange dauert die Bearbeitung des Antrags in der Regel?;How long does the processing of the application usually take?
+Gibt es für diesen Antrag ein bestimmtes Formular zum Ausfüllen?;Is there a specific form to fill out for this application?
+Muss ich die Gebühr sofort vor Ort bezahlen?;Do I have to pay the fee immediately on site?
+Kann ich die Gebühren auch bequem mit EC-Karte begleichen?;Can I also settle the fees conveniently by debit card?
+Ich habe einen Bescheid erhalten und möchte Einspruch einlegen.;I have received a decision notice and would like to lodge an objection.
+Bis wann muss der schriftliche Widerspruch eingegangen sein?;By when must the written objection be received?
+Könnten Sie mir bitte eine Meldebescheinigung ausstellen?;Could you please issue a registration certificate for me?
+Ich benötige ein erweitertes Führungszeugnis für meinen Arbeitgeber.;I need an extended certificate of good conduct for my employer.
+Wo muss ich diese Unterlagen im Gebäude einreichen?;Where in the building do I need to submit these documents?
+Sie bekommen eine schriftliche Benachrichtigung per Post zugeschickt.;You will receive a written notification sent by post.
+Bitte ziehen Sie am Eingang eine Wartenummer.;Please draw a waiting queue number at the entrance.
+Nehmen Sie bitte im Wartebereich Platz, Sie werden aufgerufen.;Please take a seat in the waiting area, you will be called.
+Geben Sie bitte Ihr Aktenzeichen bei jedem Schriftwechsel an.;Please state your reference number in all correspondence.
+Vielen Dank für Ihre freundliche und geduldige Hilfe!;Thank you very much for your kind and patient help!
+Auf Wiedersehen und einen schönen Tag noch!;Goodbye and have a pleasant day ahead!

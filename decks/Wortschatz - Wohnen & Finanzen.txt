@@ -1,0 +1,31 @@
+German;English
+der Mietvertrag;the lease / rental contract
+die Kaution;the security deposit
+die Nebenkosten;the additional utility expenses
+die Warmmiete;the warm rent (including utilities)
+die Kaltmiete;the cold / basic rent
+der Vermieter;the landlord
+die Vermieterin;the landlady
+der Mieter;the tenant
+die Hausordnung;the house rules
+der Personalausweis;the identity card (ID)
+der Reisepass;the passport
+die Meldebescheinigung;the registration certificate
+die Behörde;the public authority / government office
+das Bürgeramt;the local municipal citizen's office
+das Finanzamt;the tax office
+die Krankenkasse;the health insurance company
+das Formular;the official form
+der Antrag;the application / petition
+der Bescheid;the formal official decision notice
+der Einspruch;the legal objection / appeal
+das Bankkonto;the bank account
+die Überweisung;the bank transfer
+der Dauerauftrag;the standing order
+die Steuer-ID;the tax identification number
+die Frist;the deadline / time limit
+die Versicherung;the insurance
+der Vertrag;the contract / agreement
+die Kündigung;the termination / cancellation notice
+die Unterschrift;the signature
+die Beglaubigung;the official notarization / authentication

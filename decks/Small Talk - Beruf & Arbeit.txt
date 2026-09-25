@@ -1,0 +1,21 @@
+German;English
+Wie läuft die Arbeit heute?;How is work going today?
+Ich habe heute eine wichtige Besprechung.;I have an important meeting today.
+Wir müssen dieses Projekt bis Freitag abschließen.;We have to finish this project by Friday.
+Können Sie mir die Unterlagen bitte per E-Mail zusenden?;Could you please send me the documents via email?
+Ich arbeite heute und morgen im Homeoffice.;I am working from home today and tomorrow.
+Wann ist die Frist für den Zwischenbericht?;When is the deadline for the interim report?
+Haben Sie kurz Zeit für eine kurze Frage?;Do you have a moment for a quick question? (formal)
+Danke für die produktive Zusammenarbeit!;Thank you for the productive collaboration!
+Wer leitet eigentlich dieses neue Projekt?;Who is actually leading this new project?
+Ich bin mit den heutigen Aufgaben fast fertig.;I am almost done with today's tasks.
+Wir sollten dazu ein kurzes Meeting ansetzen.;We should schedule a brief meeting about that.
+Der Kunde war mit unserer Präsentation sehr zufrieden.;The client was very pleased with our presentation.
+Haben Sie heute viele Überstunden gemacht?;Did you work a lot of overtime today?
+Ich habe heute leider sehr viele Termine im Kalender.;Unfortunately, I have a lot of appointments on my calendar today.
+Können wir den Termin auf morgen Nachmittag verschieben?;Could we reschedule the meeting to tomorrow afternoon?
+Das ist wirklich ein sehr interessanter Vorschlag.;That is really a very interesting proposal.
+Schönen Feierabend und bis morgen im Büro!;Have a nice evening after work and see you tomorrow in the office!
+Vielen Dank für Ihre schnelle und hilfreiche Rückmeldung!;Thank you very much for your prompt and helpful feedback!
+Ich freue mich sehr auf die Zusammenarbeit mit Ihnen!;I am very much looking forward to working with you!
+Schönes Wochenende, erholen Sie sich gut vom Arbeitsstress!;Have a great weekend, get some rest from work stress!

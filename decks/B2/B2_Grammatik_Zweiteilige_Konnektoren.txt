@@ -1,0 +1,21 @@
+# B2 Zweiteilige Konnektoren (Two-Part Connectors)
+# Format: German sentence template / example; English meaning
+
+sowohl... als auch (kopulativ); both... and / as well as
+weder... noch (negativ); neither... nor
+nicht nur... sondern auch (steigernd); not only... but also
+zwar... aber (konzessiv); it is true that... but / indeed... however
+entweder... oder (alternativ); either... or
+je... desto (proportional); the... the (e.g. je schneller, desto besser)
+je... umso (proportional variant); the... the (e.g. je mehr man übt, umso leichter fällt es)
+einerseits... andererseits (kontrastierend); on the one hand... on the other hand
+theils... theils (teilend); partly... partly
+nicht so... wie (Vergleich); not as... as
+Wir bieten sowohl flexible Arbeitszeiten als auch Homeoffice an.; We offer both flexible working hours and work from home.
+Er spricht weder fließend Englisch noch Französisch.; He speaks neither fluent English nor French.
+Das Seminar war nicht nur lehrreich, sondern auch sehr unterhaltsam.; The seminar was not only instructive, but also very entertaining.
+Das Projekt ist zwar anspruchsvoll, aber durchaus machbar.; The project is indeed demanding, but definitely doable.
+Wir müssen uns entweder für Option A oder Option B entscheiden.; We must decide on either Option A or Option B.
+Je früher wir anfangen, desto eher sind wir fertig.; The earlier we begin, the sooner we are finished.
+Je länger man wartet, umso schwieriger wird die Lösung.; The longer one waits, the more difficult the solution becomes.
+Einerseits möchte ich reisen, andererseits muss ich sparen.; On the one hand I want to travel, on the other hand I have to save.

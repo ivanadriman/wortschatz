@@ -1,0 +1,19 @@
+German;English
+Hallo! Freut mich sehr, dich kennenzulernen!;Hello! Very pleased to meet you! (informal)
+Freut mich auch! Ich heiße Thomas.;Pleased to meet you too! My name is Thomas.
+Woher kennst du die Gastgeber?;How do you know the hosts?
+Bist du heute zum ersten Mal hier?;Is this your first time here today?
+Was machst du denn beruflich?;What do you do for a living?
+Die Musik ist heute Abend wirklich gut, oder?;The music tonight is really good, isn't it?
+Kann ich dir etwas zu trinken von der Bar mitbringen?;Can I bring you something to drink from the bar?
+Das Essen am Buffet schmeckt fantastisch!;The food at the buffet tastes fantastic!
+Woher kommst du eigentlich ursprünglich?;Where are you from originally?
+Das klingt total spannend, erzähl mal mehr!;That sounds totally exciting, tell me more!
+Was machst du am liebsten in deiner Freizeit?;What do you like to do most in your free time?
+Hast du die anderen Leute hier schon kennengelernt?;Have you met the other people here yet?
+Wie lange bleibst du noch auf der Feier?;How long are you staying at the party?
+Es war wirklich toll, mich mit dir zu unterhalten!;It was really great talking with you!
+Viel Spaß noch heute Abend!;Have lots of fun tonight!
+Lass uns auf jeden Fall in Kontakt bleiben!;Let's definitely stay in touch!
+Mach's gut, bis zum nächsten Mal!;Take care, until next time!
+Tschüss und feiert noch schön!;Bye and have fun celebrating!

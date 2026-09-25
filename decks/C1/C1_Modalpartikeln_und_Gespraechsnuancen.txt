@@ -1,0 +1,18 @@
+# C1 Modalpartikeln & Gesprächsnuancen (Pragmatic Modal Particles)
+# Format: German sentence with particle; English nuance & explanation
+
+Das ist ja interessant! (Partikel "ja": Bekanntheit / Überraschung); That is interesting indeed! (expresses surprise or shared knowledge)
+Kommst du denn heute zum Abendessen? (Partikel "denn": echtes Interesse / Milderung); Are you actually coming to dinner today? (softens question, shows genuine curiosity)
+Das kann doch nicht wahr sein! (Partikel "doch": Widerspruch / Empörung); That simply cannot be true! (challenges an assumption or disbelief)
+Es ist halt so, wir können nichts daran ändern. (Partikel "halt": Unabänderlichkeit); It's just like that, we can't change it. (indicates resigned acceptance)
+Das ist eben Schicksal. (Partikel "eben": Resignation / logische Konsequenz); That is simply fate. (expresses inevitable, unalterable fact)
+Hör mir mal bitte kurz zu! (Partikel "mal": Milderung eines Imperativs); Just listen to me for a moment, please! (makes request conversational / less abrupt)
+Was hast du dir bloß dabei gedacht? (Partikel "bloß": Ratlosigkeit / Vorwurf); Whatever were you thinking? (intensifies dismay or reproach)
+Das hättest du wohl gerne! (Partikel "wohl": Ironie / Vermutung); You'd like that, wouldn't you! (expresses presumption or irony)
+Wer weiß das schon? (Partikel "schon": rhetorische Relativierung); Who knows that anyway? (rhetorical question, implies 'hardly anyone')
+Mach das ja nicht noch einmal! (Partikel "ja": dringliche Warnung); Don't you dare do that again! (strong imperative warning)
+Das war vielleicht anstrengend! (Partikel "vielleicht": emotionale Verstärkung); Boy, was that exhausting! (colloquially emphasizes high intensity)
+Ich bin ohnehin schon spät dran. (Partikel "ohnehin": sowieso); I'm already running late anyway. (independent of other factors)
+Das ist nun mal passiert, Schwamm drüber! (Partikel "nun mal": Faktizität); That just happened, let bygones be bygones! (unalterable fact)
+Sie wird wohl im Stau stecken. (Partikel "wohl": hohe Wahrscheinlichkeit); She is probably stuck in traffic. (probable assumption)
+Zeig doch mal, was du da hast! (Kombination "doch mal": freundliche Ermunterung); Do show me what you have there! (friendly encouragement)

@@ -1,0 +1,23 @@
+German;English
+Sehr geehrte Damen und Herren,;Dear Sir or Madam, (formal salutation to unknown recipient)
+Sehr geehrte Frau Müller,;Dear Ms. Müller, (formal salutation - female)
+Sehr geehrter Herr Schmidt,;Dear Mr. Schmidt, (formal salutation - male)
+Ich schreibe Ihnen bezüglich unserer gestrigen Besprechung.;I am writing to you regarding our meeting yesterday.
+Ich wende mich an Sie, um mich über Ihr Angebot zu informieren.;I am contacting you to inquire about your offer.
+Bezug nehmend auf Ihre E-Mail vom 15. Oktober...;With reference to your email of October 15th...
+Vielen Dank für Ihre schnelle und freundliche Rückmeldung.;Thank you very much for your prompt and friendly reply.
+Könnten Sie mir bitte die vollständigen Unterlagen zusenden?;Could you please send me the complete documents?
+Ich wäre Ihnen sehr dankbar, wenn Sie mir diesen Termin bestätigen könnten.;I would be very grateful if you could confirm this appointment for me.
+Bitte teilen Sie mir baldmöglichst mit, ob der Termin für Sie passt.;Please let me know as soon as possible if the date works for you.
+Im Anhang finden Sie die gewünschten Dokumente als PDF.;Attached you will find the requested documents as a PDF.
+Anbei übersende ich Ihnen meinen aktuellen Lebenslauf.;Attached I send you my current curriculum vitae (CV).
+Ich möchte den Termin für nächsten Dienstag hiermit bestätigen.;I would hereby like to confirm the appointment for next Tuesday.
+Könnten wir den Termin um eine Stunde nach hinten verschieben?;Could we push the appointment back by one hour?
+Bitte entschuldigen Sie die verspätete Antwort auf Ihre Nachricht.;Please excuse the delayed response to your message.
+Wir bitten um Entschuldigung für die entstandenen Unannehmlichkeiten.;We apologize for any inconvenience caused.
+Für weitere Fragen stehe ich Ihnen jederzeit gerne zur Verfügung.;I remain at your disposal at any time should you have any further questions.
+Vielen Dank im Voraus für Ihre Unterstützung und Mühe.;Thank you in advance for your support and effort.
+Ich freue mich auf eine erfolgreiche Zusammenarbeit mit Ihnen.;I look forward to a successful collaboration with you.
+Ich freue mich auf Ihre baldige Rückmeldung.;I look forward to your prompt response.
+Mit freundlichen Grüßen;Kind regards / Yours sincerely (standard formal sign-off)
+Beste Grüße;Best regards (semi-formal sign-off)

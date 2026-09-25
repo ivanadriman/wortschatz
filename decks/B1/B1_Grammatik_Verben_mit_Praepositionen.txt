@@ -1,0 +1,33 @@
+# B1 Grammatik - Verben mit festen Präpositionen
+# Format: German phrase; English meaning
+
+warten auf (+ Akk); to wait for
+sich freuen auf (+ Akk); to look forward to (future event)
+sich freuen über (+ Akk); to be pleased / happy about (present / past event)
+sich interessieren für (+ Akk); to be interested in
+denken an (+ Akk); to think of / about
+sich erinnern an (+ Akk); to remember / recall
+glauben an (+ Akk); to believe in
+sich gewöhnen an (+ Akk); to get used to / accustomed to
+achten auf (+ Akk); to pay attention to / watch out for
+hoffen auf (+ Akk); to hope for
+sich konzentrieren auf (+ Akk); to concentrate on
+verzichten auf (+ Akk); to do without / renounce
+sich ärgern über (+ Akk); to be annoyed about
+sich beschweren über (+ Akk); to complain about
+sprechen über (+ Akk); to talk about
+gehören zu (+ Dat); to belong to / be part of
+gratulieren zu (+ Dat); to congratulate on
+einladen zu (+ Dat); to invite to
+passen zu (+ Dat); to match / go well with
+teilnehmen an (+ Dat); to participate in / take part in
+zweifeln an (+ Dat); to doubt
+leiden an (+ Dat); to suffer from (a medical illness)
+leiden unter (+ Dat); to suffer under / from (conditions or stress)
+sich beschäftigen mit (+ Dat); to occupy oneself with / deal with
+telefonieren mit (+ Dat); to talk on the phone with
+träumen von (+ Dat); to dream of
+abhängen von (+ Dat); to depend on
+fragen nach (+ Dat); to ask for / enquire about
+sich erkundigen nach (+ Dat); to inquire about / ask about
+riechen nach (+ Dat); to smell of
